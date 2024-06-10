@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Krishna Foodcourt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Color Variables */
+    :root {
+        --primary-color: #ff7f50; /* Coral */
+        --secondary-color: #ffe4b5; /* Moccasin */
+        --background-color: #f0f8ff; /* AliceBlue */
+        --text-color: #2f4f4f; /* Dark Slate Gray */
+        --button-color: #32cd32; /* Lime Green */
+        --footer-bg-color: #4682b4; /* Steel Blue */
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 15px 0;
+        font-weight: 600;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    header nav ul li {
+        margin-left: 20px;
+    }
+
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    .hero {
+        background: url('dining-hero.jpg') no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: var(--text-color);
+    }
+
+    .hero .container {
+        color: var(--text-color);
+    }
+
+    .hero h2 {
+        font-size: 3em;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    section .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .dish {
+        display: inline-block;
+        width: 30%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .dish img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input, form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid var(--secondary-color);
+        background-color: var(--secondary-color);
+    }
+
+    form button {
+        padding: 10px;
+        background-color: var(--button-color);
+        color: white;
+        border: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: var(--footer-bg-color);
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+    }
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sri Krishna Foodcourt</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#catering">Catering</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Sri Krishna Foodcourt</h2>
+            <p>Savor the finest flavors and a remarkable dining experience.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Sri Krishna Foodcourt offers a variety of delicious meals for lunch . Our chefs use the freshest ingredients to craft dishes that will delight your palate. Join us for an unforgettable dining experience.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <h3>Tiffin</h3>
+            <div class="dish">
+                <h3>Veg @30</h3>
+                <ul>
+                    <li>Idli</li>
+                    <li>Puri</li>
+                    <li>Mysore Bonda</li>
+                    <li>Vada</li>
+                    <li>Onion Bonda</li>
+                </ul>
+            </div>
+            <div class="dish">
+                <h3>Dosa</h3>
+                <ul>
+                    <li>Egg Dosa - 40₹</li>
+                    <li>Double Egg Dosa - 50₹</li>
+                    <li>Plain Dosa - 25₹</li>
+                    <li>Onion Dosa - 30₹</li>
+                    <li>Masala Dosa - 30₹</li>
+                    <li>Karam Dosa - 30₹</li>
+                </ul>
+            </div>
+            <div class="dish">
+                <h3>Non-Veg @70</h3>
+                <ul>
+                    <li>Chicken Dosa</li>
+                    <li>Puri Chicken</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="menu">
+        <div class="container">
+            <h3>lunch</h3>
+
+            <div class="dish">
+
+               
+                <h3> Veg Rice</h3>
+                <li> Dal Rice
+                    (puppu,sambar,any curry, any pickle , any sweet, curd , rice )
+                </li>
+            </div>
+            <div class="dish">
+                <h3>NON-Veg</h3>
+                <li> Chicken rice
+                    (Samber,Sweet,Chicken Curry/dry fry,Curd)
+                </li>
+
+                <li> Chicken rice
+                    (Samber,Sweet,Chicken Curry/dry fry,Curd)
+                </li>
+            
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Dining Establishment</p>
+        </div>
+    </footer>
+
+</body>
+</html>
