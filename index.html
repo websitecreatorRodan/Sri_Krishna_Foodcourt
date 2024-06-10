@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri Krishna Foodcourt</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* Color Variables */
@@ -29,32 +28,9 @@
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 15px 0;
+            padding: 3vw 0;
             font-weight: 600;
-        }
-
-        header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 15px;
-        }
-
-        header nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        header nav ul li {
-            margin-left: 20px;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 400;
+            text-align: center;
         }
 
         .hero {
@@ -69,18 +45,18 @@
         }
 
         .hero h2 {
-            font-size: 2.5em;
+            font-size: 6vw;
             margin: 0;
             font-weight: 600;
         }
 
         .hero p {
-            font-size: 1.2em;
+            font-size: 4vw;
             font-weight: 300;
         }
 
         section {
-            padding: 60px 20px;
+            padding: 10vw 5vw;
         }
 
         section .container {
@@ -90,15 +66,15 @@
         }
 
         section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+            font-size: 6vw;
+            margin-bottom: 5vw;
             font-weight: 600;
         }
 
         .dish {
             box-sizing: border-box;
-            padding: 10px;
-            margin: 10px;
+            padding: 5vw;
+            margin: 5vw;
             text-align: left;
         }
 
@@ -114,7 +90,7 @@
         }
 
         form {
-            max-width: 600px;
+            max-width: 80vw;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -122,20 +98,20 @@
         }
 
         form input, form textarea {
-            margin-bottom: 15px;
-            padding: 10px;
-            font-size: 1em;
+            margin-bottom: 3vw;
+            padding: 3vw;
+            font-size: 4vw;
             border-radius: 5px;
             border: 1px solid var(--secondary-color);
             background-color: var(--secondary-color);
         }
 
         form button {
-            padding: 10px;
+            padding: 3vw;
             background-color: var(--button-color);
             color: white;
             border: none;
-            font-size: 1.2em;
+            font-size: 4vw;
             cursor: pointer;
             border-radius: 5px;
         }
@@ -144,46 +120,25 @@
             background-color: var(--footer-bg-color);
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 3vw 0;
         }
 
         /* Responsive Styles */
-        @media (max-width: 768px) {
-            header .container {
-                flex-direction: column;
+        @media (min-width: 769px) {
+            body {
+                font-size: 1rem;
             }
-            
-            header nav ul {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            header nav ul li {
-                margin: 10px 0;
-            }
-
             .hero h2 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+            section h2 {
                 font-size: 2em;
             }
-
-            .hero p {
+            form input, form textarea, form button {
                 font-size: 1em;
-            }
-
-            section h2 {
-                font-size: 1.5em;
-            }
-
-            .dish {
-                width: 100%;
-            }
-
-            .dish img {
-                margin-bottom: 15px;
-            }
-
-            .dishes {
-                flex-direction: column;
             }
         }
     </style>
@@ -192,15 +147,6 @@
     <header>
         <div class="container">
             <h1>Sri Krishna Foodcourt</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#catering">Catering</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
@@ -214,7 +160,7 @@
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Sri Krishna Foodcourt offers a variety of delicious meals for lunch . Our chefs use the freshest ingredients to craft dishes that will delight your palate. Join us for an unforgettable dining experience.</p>
+            <p>Sri Krishna Foodcourt offers a variety of delicious meals for lunch. Our chefs use the freshest ingredients to craft dishes that will delight your palate. Join us for an unforgettable dining experience.</p>
         </div>
     </section>
 
@@ -255,24 +201,17 @@
         </div>
     </section>
 
-    <section id="menu">
+    <section id="lunch-menu">
         <div class="container">
             <h3>Lunch</h3>
             <div class="dishes">
                 <div class="dish">
                     <h3>Veg Rice</h3>
-                    <li>Dal Rice
-                        (puppu, sambar, any curry, any pickle, any sweet, curd, rice)
-                    </li>
+                    <p>Dal Rice (puppu, sambar, any curry, any pickle, any sweet, curd, rice)</p>
                 </div>
                 <div class="dish">
                     <h3>Non-Veg</h3>
-                    <li>Chicken rice
-                        (Sambar, Sweet, Chicken Curry/dry fry, Curd)
-                    </li>
-                    <li>Chicken rice
-                        (Sambar, Sweet, Chicken Curry/dry fry, Curd)
-                    </li>
+                    <p>Chicken rice (Sambar, Sweet, Chicken Curry/dry fry, Curd)</p>
                 </div>
             </div>
         </div>
@@ -284,6 +223,7 @@
             <form id="contactForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
